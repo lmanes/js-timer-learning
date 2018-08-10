@@ -18,19 +18,32 @@
 </head>
 
 <body>
+<!-- bootstrap positioning divs -->
+<div class="container"> <div class="row"> <div class="col-md-6 col-md-offset-3">
 
+<form id="timer_container">
     <h1>hello test test</h1>
 
-    <div class="help">
+    <div class="timer">
 
-        <p>I guess because my parents keep telling me to be more ladylike. As though! Bender, being God isn't easy. If you do too much, people get dependent on you, and if you do nothing, they lose hope. You have to use a light touch. Like a safecracker, or a pickpocket. Say it in Russian! Goodbye, cruel world. Goodbye, cruel lamp. Goodbye, cruel velvet drapes, lined with what would appear to be some sort of cruel muslin and the cute little pom-pom curtain pull cords. Cruel though they may be ... </p>
+        <label for="time_minutes">Time (in minutes)</label>
+        <input type="number" id="time_minutes">
 
     </div>
 
-    <button type="submit" class="btn-default">I am a button!</button>
+    <div>
+        <button type="submit" id="submit_time" class="btn btn-lg btn-primary">I am a button!</button>
+    </div>
+
+    <div id="time_output" class="output">
+
+    </div>
+</form>
+
+<!-- close all the bootstrap positioning divs -->
+</div> </div> </div>
 
     <script src="../js/timer-script.js"></script>
-
 
 </body>
 </html>
