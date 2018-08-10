@@ -13,7 +13,9 @@ i have no idea what i'm doing
 1. add these things to .gitignore: https://gist.github.com/octocat/9257657
 
 ## bootstrap, i guess
-1. 
+1. https://getbootstrap.com/docs/3.3/getting-started/ simple version ("download bootstrap")
+1. add their viewport meta tag from here: https://getbootstrap.com/docs/3.3/css/
+1. add a bootstrap class to something (try `btn-default`) and test it! hooray, it works. 
 
 # resources
 * http://fillerama.io/
