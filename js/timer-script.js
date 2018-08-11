@@ -11,7 +11,7 @@ var output = document.getElementById('time_output');
 document.addEventListener('DOMContentLoaded', function(){
 
     //listener for clicking the submit button -- nested so that it doesn't run until the page has loaded
-    document.getElementById('timer_container').addEventListener('submit', outputNumber);
+    document.getElementById('submit_time').addEventListener('click', outputNumber);
 
     //disable the button on page load
     submitButton.disabled = true;
@@ -27,17 +27,18 @@ document.addEventListener('DOMContentLoaded', function(){
 
     });
 
+    //here's what will happen when you click the submit button
+    function outputNumber(event){
+        //will prevent any default actions
+        event.preventDefault();
 
+        //will set the content of the output box to the value of the input!
+        output.innerHTML = timeMinutes.value;
+    };
+    
 });
 
-//here's what will happen when you click the submit button
-function outputNumber(event){
-    //will prevent any default actions
-    event.preventDefault();
 
-    //will set the content of the output box to the value of the input!
-    output.innerHTML = timeMinutes.value;
-};
 
 
 
