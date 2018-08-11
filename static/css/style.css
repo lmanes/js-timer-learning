@@ -1,1 +1,7 @@
 h1 { color: red; }
+
+form { padding: 10px; border-bottom: 2px dashed pink; }
+
+div { padding-bottom: 10px; }
+
+div.output { padding: 10px; background: #e7e7e7; width: 100px; height: 100px; }

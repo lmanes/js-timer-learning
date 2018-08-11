@@ -4,46 +4,69 @@
 <head>
     <meta charset="utf-8">
 
-<<<<<<< HEAD
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css" media="all">
-=======
-    <link rel="stylesheet" href="style.css" media="all">
->>>>>>> d1a34af4ab0d9fc862d576767ecfd707d3ccffee
 
     <title>I have no idea what I'm doing</title>
 
     <meta name="description" content="no idea">
-<<<<<<< HEAD
+
     <meta name="author" content="lmanes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-=======
-    <meta name="author" content="lmanes"
->>>>>>> d1a34af4ab0d9fc862d576767ecfd707d3ccffee
 
 </head>
 
 <body>
+<!-- bootstrap positioning divs -->
+<div class="container"> <div class="row"> <div class="col-md-6 col-md-offset-3">
 
+<form id="timer_container">
     <h1>hello test test</h1>
 
-<<<<<<< HEAD
-    <div class="help">
-
-        <p>I guess because my parents keep telling me to be more ladylike. As though! Bender, being God isn't easy. If you do too much, people get dependent on you, and if you do nothing, they lose hope. You have to use a light touch. Like a safecracker, or a pickpocket. Say it in Russian! Goodbye, cruel world. Goodbye, cruel lamp. Goodbye, cruel velvet drapes, lined with what would appear to be some sort of cruel muslin and the cute little pom-pom curtain pull cords. Cruel though they may be ... </p>
-
+    <div class="timer">
+        <label for="time_minutes">Time (in minutes)</label>
+        <input type="number" id="time_minutes">
     </div>
 
-    <button type="submit" class="btn-default">I am a button!</button>
-=======
-    <div class="help">I guess because my parents keep telling me to be more ladylike. As though! Bender, being God isn't easy. If you do too much, people get dependent on you, and if you do nothing, they lose hope. You have to use a light touch. Like a safecracker, or a pickpocket. Say it in Russian! Goodbye, cruel world. Goodbye, cruel lamp. Goodbye, cruel velvet drapes, lined with what would appear to be some sort of cruel muslin and the cute little pom-pom curtain pull cords. Cruel though they may be ... </div>
+    <div>
+        <button type="button" id="submit_time" class="btn btn-lg btn-primary">I am a button!</button>
+    </div>
 
-    <button type="submit">I am a button!</button>
->>>>>>> d1a34af4ab0d9fc862d576767ecfd707d3ccffee
+    <div id="time_output" class="output"></div>
+</form>
+
+<form id="random_number_container">
+
+    <div id="minmax_container">
+        <fieldset>
+            <legend>Set a min and max duration (in minutes)</legend>
+
+            <div>
+                <label for="min_duration">Minimum duration</label>
+                <input type="text" id ="min_duration" required value="1">
+            </div>
+
+            <div>
+                <label for="max_duration">Maximum duration</label>
+                <input type="text" id="max_duration" required value="10">
+            </div>
+    </div>
+
+    <div>
+        <button type="button" id="generate_random" class="btn btn-lg btn-primary">Find a random number please</button>
+    </div>
+
+    <div id="random_output" class="output"></div>
+    <button type="button" id="start_countdown" class="btn btn-sm btn-default">Start the countdown <br />(does not actually start the countdown)</button>
+
+</form>
+
+<!-- close all the bootstrap positioning divs -->
+</div> </div> </div>
 
     <script src="../js/timer-script.js"></script>
-
+    <script src="../js/random.js"></script>
 
 </body>
 </html>
