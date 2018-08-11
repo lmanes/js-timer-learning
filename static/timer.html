@@ -44,12 +44,12 @@
 
             <div>
                 <label for="min_duration">Minimum duration</label>
-                <input type="text" id ="min_duration" required>
+                <input type="text" id ="min_duration" required value="1">
             </div>
 
             <div>
                 <label for="max_duration">Maximum duration</label>
-                <input type="text" id="max_duration" required>
+                <input type="text" id="max_duration" required value="10">
             </div>
     </div>
 
@@ -58,6 +58,8 @@
     </div>
 
     <div id="random_output" class="output"></div>
+    <button type="button" id="start_countdown" class="btn btn-sm btn-default">Start the countdown <br />(does not actually start the countdown)</button>
+
 </form>
 
 <!-- close all the bootstrap positioning divs -->

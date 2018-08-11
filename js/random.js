@@ -5,6 +5,7 @@
     document.addEventListener('DOMContentLoaded', function(){
 
         var buttonRandom = document.getElementById('generate_random');
+        var buttonStart = document.getElementById('start_countdown');
 
         //listener for clicking the random button -- nested so that it doesn't run until the page has loaded
         buttonRandom.addEventListener('click', outputRandom);
@@ -29,9 +30,25 @@
             //drop it in the log for testing
             console.log(randomResult);
 
-            //will set the content of the output box to the value of the input!
+            //set the content of the output box to random number!
             document.getElementById('random_output').innerHTML = randomResult;
+
+            //listen for click on start button
+            buttonStart.addEventListener('click', startCountdown);
+
+            // do the countdown (not currently doing the countdown)
+            function startCountdown(event){
+                var now = new Date().getTime();
+                var alarmTime = now + (randomResult * 60000);
+
+            console.log(now, alarmTime);
+
+//                document.getElementById('random_output').innerHTML = deadline;
+            };
         };
+
+
+
 });
 
 
